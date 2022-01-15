@@ -1,0 +1,460 @@
+/* --------------------------
+    HTML-style-starts 
+------------------------------*/
+*{
+    padding: 0;
+    margin: 0;
+}
+
+html{
+    background-color: rgba(86, 86, 86, 0.123);
+    scroll-behavior: smooth;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body{
+    background-color: #ffffff;
+    width: 1366px;
+    max-width: 100%;
+    margin: auto;
+    box-shadow: 0.5rem 0.5rem 0.5rem #000000, -0.1rem -0rem -0.1rem #000000;
+    box-sizing: border-box;
+}
+/* --------------------------
+    HTML-style-ends 
+------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+    common-style-starts 
+------------------------------*/
+:root{
+    --color: #22956e;
+    --color1: #22956f11;
+}
+
+p{
+    color:#000000;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    text-align: justify;
+}
+
+h2{
+    font-size: 35px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+a:hover{
+    text-decoration: underline;
+}
+/* --------------------------
+    common-style-ends 
+------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+    header-style-starts 
+------------------------------*/
+header nav{
+    padding: 50px;
+}
+
+header .banner{
+    padding: 50px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+header .banner .text, .image{
+    width: 50%;    
+}
+
+header .banner .text h1{
+    font-size: 50px;
+    line-height: 70px;
+}
+
+header .banner .text p{
+    margin: 20px 0;
+}
+
+header .banner button{
+    background-color: var(--color);
+    color: white;
+    border: 2px solid var(--color);         
+    padding: 15px 25px;
+    font-size: 18px;
+    border-radius: 50px;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+header .banner button:hover{
+    background-color: white;
+    color: var(--color);
+    border: 2px solid var(--color);       
+}
+
+header .banner .image{
+    padding-left: 200px;    
+}
+
+header .banner .image img {     
+    animation: camera 10s linear 0s infinite alternate;
+  }
+  
+@keyframes camera {
+    0% { 
+      transform: rotatez(360deg) scale(.01);     
+      opacity: 0;
+    }
+
+    15%{
+        opacity: 0.7;
+    }
+
+    30%{
+        transform: rotatex(0deg) scale(1); 
+        opacity: 1;  
+    }
+
+    100%{
+        transform: rotatex(0deg);
+    }   
+}
+/* --------------------------
+    header-style-ends 
+------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+    main-style-starts 
+------------------------------*/
+main .items{    
+    padding: 100px 200px;
+}
+
+main .items .card-container{ 
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    justify-content: center;
+}
+
+main .items .card-container .card{
+    height: fit-content;
+    width: fit-content;
+    padding: 10px;
+    box-shadow: 1px 1px 10px gray;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+main .items .card-container .card .image{
+    height: 260px;
+    width: 300px;
+}
+
+main .items .card-container .card .image img{
+    width: 100%;
+}
+
+main .items .card-container .card .text{
+    padding: 15px 5px;
+}
+
+main .items .card-container .card .text h6{
+    color: gray;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 0;
+    margin: 20px 0 20px 0;   
+}
+
+main .items .see-more{
+    float: right;
+    clear: 'both';
+    margin-top: 20px;
+}
+
+main .items .see-more a{
+    text-decoration: none;
+    font-size: 24px;    
+    color: var(--color);  
+}
+
+main .items .see-more a:hover{   
+    color:rgba(48, 159, 137, 0.719);
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+main .subscribe-us{
+    background-color: var(--color1);
+    padding: 50px;
+}
+
+main .subscribe-us h6{
+    font-size: 50px;
+    text-align: center;
+    font-weight: bold;
+    margin: 20px 0;
+    color: var(--color);
+}
+
+main .subscribe-us p{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 18px;
+    color: var(--color);
+}
+
+main .subscribe-us input{    
+    padding: 30px 60px;
+    font-size: 18px;
+    border: none;
+    border-radius: 10px;
+}
+
+main .subscribe-us input:focus{
+    outline: 2px solid var(--color);
+}
+
+main .subscribe-us button{
+    padding: 20px 50px;
+    border: 1px solid var(--color);
+    background-color: var(--color);
+    color: white;  
+    font-size: 22px;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+main .subscribe-us button:hover{
+    border: 1px solid var(--color);
+    color: var(--color);
+    background-color: transparent;
+}
+/* --------------------------
+    main-style-ends 
+------------------------------*/
+
+
+
+
+
+
+
+
+
+
+/* --------------------------
+    footer-style-starts 
+------------------------------*/
+footer{
+    padding: 30px 50px 50px;
+    background-color: var(--color);
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+footer .text h5, footer .text p{
+    font-weight: 600;
+}
+
+footer .social-icon{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer .social-icon button{
+    height: 50px;
+    width: 50px;
+    font-size: 25px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+    margin: 8px;
+    background-color: white;
+    transition: 1s;
+}
+
+footer .social-icon button:hover{
+    border: 2px solid var(--color);   
+}
+/* --------------------------
+    footer-style-ends 
+------------------------------*/
+
+
+
+
+
+
+
+/* --------------------------
+    media-query-style-starts 
+------------------------------*/
+@media screen and (max-width: 1100px){  
+    header .banner .image{
+    padding: 50px 30px 0 10px;    
+    }
+
+    header .banner .text p{
+        text-align: left;
+    }
+
+    main .items .card-container{ 
+        display: grid;
+        grid-template-columns: auto auto;
+        gap: 20px;
+        justify-content: center;
+    }
+
+    main .items .see-more{
+        float: none;   
+    }
+
+    footer{
+        display: block;
+    }
+
+   
+
+    footer .text h5, p{
+        text-align: center;
+        font-size: 16px;
+    }
+    
+       
+    footer .social-icon{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }    
+    
+}
+
+
+@media screen and (max-width: 768px){ 
+    header{
+        text-align: center;
+    } 
+    header .banner{
+        display: block;
+    }
+
+    header .banner .image, header .banner .text{
+        width: 100%;
+    }
+    
+    header .banner .text p{
+        text-align: center;
+    }
+
+    main .items .card-container{        
+        grid-template-columns: auto;      
+    }
+
+    main .items{
+        padding-top: 20px;  
+    } 
+}
+
+
+@media screen and (max-width: 576px){  
+    header .banner{
+        padding: 10px;
+        padding-bottom: 0;
+    }   
+    header .banner .image{
+        padding: 30px 5px 20 5px;       
+        width: 320px;
+        height: auto;
+    }
+
+    header .banner .image img{
+        width: 100%;
+    }
+
+    main .items{
+        padding-left: 10px;
+        padding-right: 10px;
+        width: 320px;
+    } 
+
+
+    main .subscribe-us h6{
+        font-size: 30px;      
+        margin: 10px 0;       
+    }
+    
+    main .subscribe-us p{       
+        font-size: 15px;        
+    }
+    
+    main .subscribe-us input{    
+        padding: 10px 30px;
+        font-size: 14px;       
+    }
+    
+    main .subscribe-us button{
+        padding: 10px 10px;          
+        font-size: 15px;
+    }
+
+    footer .text h5{
+        font-size: 20px;
+    }
+
+    footer .text p{
+        font-size: 15px;
+    }
+
+    footer .social-icon button{
+        height: 30px;
+        width: 30px;
+        font-size: 18px;        
+        margin: 10px 3px;
+    }
+    
+}
+/* --------------------------
+    media-query-style-ends 
+------------------------------*/
